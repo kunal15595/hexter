@@ -1,0 +1,11 @@
+MongoDB 2.4 database added.  Please make note of these credentials:
+
+   Root User:     admin
+   Root Password: DSuY_KKJIizQ
+   Database Name: hexter
+
+Connection URL: mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
+
+Database: hexter 
+User: admin 
+Password: DSuY_KKJIizQ

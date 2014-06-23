@@ -1,0 +1,46 @@
+using - even q
+
+# convert cube to axial
+q = x
+r = z
+
+# convert axial to cube
+x = q
+z = r
+y = -x-z
+
+	# convert cube to even-q offset
+	q = x
+	r = z + (x + (x&1)) / 2
+
+	# convert even-q offset to cube
+	x = q
+	z = r - (q + (q&1)) / 2
+	y = -x-z
+
+# convert cube to odd-q offset
+q = x
+r = z + (x - (x&1)) / 2
+
+# convert odd-q offset to cube
+x = q
+z = r - (q - (q&1)) / 2
+y = -x-z
+
+# convert cube to even-r offset
+q = x + (z + (z&1)) / 2
+r = z
+
+# convert even-r offset to cube
+x = q - (r + (r&1)) / 2
+z = r
+y = -x-z
+
+# convert cube to odd-r offset
+q = x + (z - (z&1)) / 2
+r = z
+
+# convert odd-r offset to cube
+x = q - (r - (r&1)) / 2
+z = r
+y = -x-z
